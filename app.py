@@ -1,12 +1,12 @@
 import requests
 
-API_KEY = "SUA_API_KEY_AQUI"
+API_KEY = "bf8f78832f2d37ff9e16200e1a68295d"
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
 
-def pegar_clima(cidade):
+def pegar_clima(city):
     params = {
-        "q": cidade,
+        "q": city,
         "appid": API_KEY,
         "lang": "pt_br",
         "units": "metric"
@@ -17,6 +17,8 @@ def pegar_clima(cidade):
     if resposta.status_code == 200:
         return resposta.json()
     else:
+        print("Status Code:", resposta.status_code)
+        print("Resposta da API:", resposta.text)
         return None
 
 
@@ -32,3 +34,5 @@ if dados:
     print(f" ️ Condição: {dados['weather'][0]['description'].capitalize()}")
 else:
     print("❌ Cidade não encontrada ou erro na requisição.")
+
+    #alguma coisa ai

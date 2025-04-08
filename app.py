@@ -35,4 +35,4 @@ if dados:
 else:
     print("❌ Cidade não encontrada ou erro na requisição.")
 
-    #alguma coisa ai
+    #alguma coisa ai por enquanto

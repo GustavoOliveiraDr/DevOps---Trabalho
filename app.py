@@ -17,3 +17,8 @@ def pegar_clima(cidade):
     resposta = resquests.get(BASE_URL, params=params)
     dados = resposta.json()
     return dados
+
+#entrada do usuário
+cidade = input("Digite o nome da cidade: ")
+dados = pegar_clima(cidade)
+print(dados)

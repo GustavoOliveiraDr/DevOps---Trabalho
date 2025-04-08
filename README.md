@@ -1,2 +1,2 @@
 # DevOps---Trabalho
-Trabalho do curso de ADS - Pucpr
+Trabalho do curso de ADS - PUCPR

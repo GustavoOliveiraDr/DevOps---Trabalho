@@ -21,4 +21,8 @@ def pegar_clima(cidade):
 #entrada do usuário
 cidade = input("Digite o nome da cidade: ")
 dados = pegar_clima(cidade)
-print(dados)
+
+if dados:
+    print(dados)
+else:
+    print("Cidade não encontrada ou erro na requisição")

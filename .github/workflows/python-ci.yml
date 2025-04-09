@@ -25,4 +25,4 @@ jobs:
         pip install requests
 
     - name: Verificar sintaxe do código
-      run: python -m py_compile feature/clima-app.py
+      run: python -m py_compile app.py

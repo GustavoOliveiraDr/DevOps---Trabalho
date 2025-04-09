@@ -34,5 +34,5 @@ if dados:
     print(f" ️ Condição: {dados['weather'][0]['description'].capitalize()}")
 else:
     print("❌ Cidade não encontrada ou erro na requisição.")
-
+    print("Ahhh Não deu certo")
     #alguma coisa ai por enquanto

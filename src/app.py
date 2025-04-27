@@ -1,3 +1,4 @@
+import app
 import requests
 
 API_KEY = "bf8f78832f2d37ff9e16200e1a68295d"
@@ -36,3 +37,7 @@ else:
     print("❌ Cidade não encontrada ou erro na requisição.")
     print("Ahhh Não deu certo")
     #alguma coisa ai por enquanto
+
+@app.get("/helloworld")
+async def root():
+    return {"message": "Hello World"}

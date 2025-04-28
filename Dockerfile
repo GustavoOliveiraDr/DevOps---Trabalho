@@ -11,4 +11,5 @@ COPY . .
 RUN pip install --no-cache-dir requests
 
 # Comando padrão para rodar o app
-CMD ["python", "app.py"]
+CMD ["python", "src/app.py"]
+

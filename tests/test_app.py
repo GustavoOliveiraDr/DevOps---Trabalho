@@ -31,3 +31,10 @@ def test_pegar_clima_condicao_existente():
     assert "weather" in resultado
     assert isinstance(resultado["weather"], list)
     assert "description" in resultado["weather"][0]
+
+def test_pegar_clima_status_code():
+    city = "São Paulo"
+    resultado = pegar_clima(city)
+    assert resultado is not None
+    assert "cod" in resultado
+    assert resultado["cod"] == 200

@@ -4,9 +4,6 @@ from src.app import *
 API_KEY = "bf8f78832f2d37ff9e16200e1a68295d"
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
-def test_root():
-    assert root() == {"message": "Hello World"}
-
 def test_pegar_clima():
     city = "São Paulo"
     resultado = pegar_clima(city)

@@ -36,7 +36,7 @@ jobs:
         run: |
           echo "Deploy iniciado..."
           echo "Aplicação pronta para produção (simulação)"
-
+  #fazendo testes
   testes:
     runs-on: ubuntu-latest
     steps:

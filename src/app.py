@@ -22,8 +22,7 @@ def pegar_clima(city):
         return None
 
 
-def main():
-    # Entrada do usuário
+if __name__ == "__main__":
     cidade = input("Digite o nome da cidade: ")
     dados = pegar_clima(cidade)
 
@@ -36,7 +35,3 @@ def main():
     else:
         print("❌ Cidade não encontrada ou erro na requisição.")
         print("Ahhh Não deu certo")
-
-
-if __name__ == "__main__":
-    main()
